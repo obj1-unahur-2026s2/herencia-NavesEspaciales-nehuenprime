@@ -12,8 +12,8 @@ class Nave {
     self.avisar()
   }
 
-  method escapar();
-  method avisar();
+  method escapar()
+  method avisar()
 
   method estaTranquila() {
     return combustible >= 4000
@@ -58,7 +58,7 @@ class Nave {
     return self.estaTranquila() && self.tienePocaActividad()
   }
 
-  method tienePocaActividad();
+  method tienePocaActividad()
 
 }
 
@@ -80,7 +80,7 @@ class Baliza inherits Nave {
   override method escapar() {
     self.irHaciaElSol()
   }
-  override avisar() {
+  override method avisar() {
     self.cambiarColorDeBaliza("rojo")
   }
 
